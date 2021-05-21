@@ -70,7 +70,7 @@ The above curve depicts that the error is minimum for polynomial degree equal to
 We have performed prediction of faults using various models namely Logistic, Polynomial regression, MLPC, Naive Bayes, D-Tree, SVM, KNN. Through our extensive analysis, we have plotted the corresponding accuracies and errors for each of the models implemented for both the detection and classification problem
 
 <img src="/pics/accdetect.png" alt="Detection problem"/>
-<img src="/pics/accclass.png" alt="Classification problem"/>
+<img src="/pics/classdetect.png" alt="Classification problem"/>
 By these results we can see that for Detection of fault,  Decision Tree give the least error i.e 0.53 percentage, and for classification of fault polynomial regression has the least error i.e. 0.62 percentage. 
 Hence the above models are considered for the corresponding problems and can well fit any real time data, due to the variety of data points present in the dataset.
 
