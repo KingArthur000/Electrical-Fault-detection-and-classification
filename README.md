@@ -16,6 +16,7 @@ The various electrical transient system faults are modelled, simulated and Vario
 We have modelled a power system in MATLAB to simulate fault analysis.The system consists of 4 generators of 11 × 103 V, each pair located at each end of the transmission line, with transformers in between to simulate and study the various faults at the midpoint of  the transmission line.
 
 MATLAB simulation of power system
+
 <img src="/pics/power system.png" alt="Power system"/>
 
 ## Dataset:
