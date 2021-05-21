@@ -55,3 +55,28 @@ Examples :
                         [1 0 1 1]- LLG Fault (Between Phases A,B and ground)
                         [0 1 1 1]-LLL Fault(Between all three phases)
                         [1 1 1 1]- LLLG fault( Three phase symmetrical fault)
+                        
+## Suitability of the selected Network model:
+The models taken into consideration were mostly classification models, i.e logistics regression, KNN, Decision tree classifier, we also wanted to check the validity of using Neural Networks such as perceptron models hence the inclusion of MLP classifier. The currents and voltages of the power system are sinusoidal in nature hence we wanted to fit a polynomial curve of higher degree to determine its predictability, hence the addition of polynomial regression. Finally to check how the predicted output matches/echoes the original dataset linear regression model was employed.
+As from the previous section we have selected the Decision tree classifier for the detection problem. Decision tree continuously splits the data into hierarchical structures where the two child data points can be grouped under a particular parent's characteristic. This is a supervised categorical learning algorithm. 
+
+Hence the model can also be extended to a classification model, in the future developments of the project. 
+Now for classification problem we have selected a polynomial regression model. As the name suggests the polynomial degree belongs to natural numbers. A test was conducted to select the appropriate degree for the regression model, 
+
+<img src="/pics/poly.png" alt="poly deg selection"/>
+The above curve depicts that the error is minimum for polynomial degree equal to 4. Hence we have selected the value and problem suits well for the test dataset from the parameters derived from the train dataset.
+
+## RESULT:
+We have performed prediction of faults using various models namely Logistic, Polynomial regression, MLPC, Naive Bayes, D-Tree, SVM, KNN. Through our extensive analysis, we have plotted the corresponding accuracies and errors for each of the models implemented for both the detection and classification problem
+
+<img src="/pics/accdetect.png" alt="Detection problem"/>
+<img src="/pics/accclass.png" alt="Classification problem"/>
+By these results we can see that for Detection of fault,  Decision Tree give the least error i.e 0.53 percentage, and for classification of fault polynomial regression has the least error i.e. 0.62 percentage. 
+Hence the above models are considered for the corresponding problems and can well fit any real time data, due to the variety of data points present in the dataset.
+
+## INFERENCE:
+We have studied the application of artificial neural networks for the detection and classification of faults on a three phase transmission lines system. The method developed utilizes the three phase voltages and three phase currents as inputs to the neural networks. The results are shown for line to ground, line-to-line, double line-to-ground and symmetrical three phase faults. All the artificial neural networks studied here adopted the back-propagation neural network architecture. The simulation results obtained prove that the satisfactory performance has been achieved by some of the proposed neural networks and out of those the polynomial regression model for classification problem and Decision tree classifier for Detection problem are practically implementable. The importance of choosing the most appropriate ANN configuration, in order to get the best performance from the network, has been stressed upon in this project. 
+
+Artificial neural networks are a reliable and effective method for an electrical power system transmission line fault classification and detection especially in view of the increasing dynamic connectivity of the modern electrical power transmission systems. The performance of an artificial neural network should be analyzed properly and particular neural network structure and learning algorithm before choosing it for a practical application. 
+
+The scope of ANN is wide enough and can be explored more. The fault detection and classification can be made intelligent by nature by developing suitable intelligent techniques. This can be achieved if we have computers which can handle large amounts of data and take less time for calculations.
