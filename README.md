@@ -30,7 +30,7 @@ All faults
 <img src="/pics/all.png" alt="ALL faults"/>
 
 Switching Time for each fault for the above graph
-<img src="/pics/fault.png" alt="FAult timings"/>
+<img src="/pics/fault.jpg" alt="FAult timings"/>
 
 ## Fault detection:
 For fault detection, the collected data is labelled as 0 or 1, where 0 is for no fault and 1 if fault is present.
